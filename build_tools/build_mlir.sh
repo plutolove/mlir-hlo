@@ -39,7 +39,7 @@ set -x
 cmake -GNinja \
   "-H$LLVM_SRC_DIR/llvm" \
   "-B$build_dir" \
-  -DLLVM_INSTALL_UTILS=ON \ 
+  -DLLVM_INSTALL_UTILS=ON \
   -DLLVM_ENABLE_PROJECTS=mlir \
   -DLLVM_TARGETS_TO_BUILD="X86;NVPTX;AMDGPU" \
   -DLLVM_INCLUDE_TOOLS=ON \
